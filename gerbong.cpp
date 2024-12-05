@@ -133,8 +133,18 @@ adr_penumpangP SearchP(ListPenumpang L, string ID){
     return NULL;
 }
 
-void connect(adr_gerbongP P, adr_penumpangP &C) {
-    parent(C) = P;
+void connect(ListGerbong G, adr_penumpangP &C) {
+    string kodegerbong;
+    cout << "Kode Gerbong: "; cin >> kodegerbong;
+    adr_gerbongP Q = SearchG(G, kodegerbong);
+    if (Q != NULL) {
+        parent(C) = Q;
+        info(Q).Jumlah_Penumpang++;
+        cout << "Data Tersimpan." << endl;
+    } else {
+        cout << "Kode gerbong tidak ditemukan." << endl;
+        connect(G, C);
+    }
 }
 
 void disconnect(adr_penumpangP &C) {
