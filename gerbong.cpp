@@ -160,11 +160,12 @@ int menuutama() {
     cout << "3. hapus data Gerbong dan Penumpang" << endl;
     cout << "4. cari data Gerbong" << endl;
     cout << "5. Tambah data Penumpang" << endl;
-    cout << "6. Input posisi Gerbong untuk Penumpang" << endl;
-    cout << "7. Ubah data Penumpang" << endl;
-    cout << "8. Tampilkan data Gerbong beserta Penumpangnya" << endl;
-    cout << "9. Cari data Penumpang sesuai Gerbong" << endl;
+    cout << "6. Ubah data Penumpang" << endl;
+    cout << "7. Tampilkan data Gerbong beserta Penumpangnya" << endl;
+    cout << "8. Cari data Penumpang sesuai Gerbong" << endl;
+    cout << "9. Hapus data Penumpang sesuai Gerbong" << endl;
     cout << "10. Hitung total penumpang" << endl;
+    cout << "11. Tampilkan data penumpang" << endl;
     cout << "0. Exit" << endl;
     int input = 0;
     cout << "Masukan pilihan: ";
