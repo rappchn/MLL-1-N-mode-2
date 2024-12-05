@@ -65,8 +65,10 @@ int main(){
             cout << "Nama: "; cin >> datapenumpang.Nama;
             cout << "Nomor Kursi: "; cin >> datapenumpang.No_kursi;
             cout << "Harga Tiket: "; cin >> datapenumpang.Harga_Tiket;
+
             adr_penumpangP P = createElemenPenumpang(datapenumpang);
             InsertLastP(PNP,P);
+            connect(G,P);
             break;
             }
 
@@ -81,7 +83,7 @@ int main(){
                 cout << "Kode Gerbong: "; cin >> kodegerbong;
                 adr_gerbongP Q = SearchG(G, kodegerbong);
                 if (Q != NULL) {
-                    connect(Q, P);
+                    //connect(Q, P);
                     info(Q).Jumlah_Penumpang++;
                     cout << "Data Tersimpan." << endl;
                 } else {
