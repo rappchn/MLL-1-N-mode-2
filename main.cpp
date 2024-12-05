@@ -73,26 +73,7 @@ int main(){
             }
 
         case 6: {
-            string kodepnp, kodegerbong;
-            cout << "------------------------" << endl;
-            cout << " Data Penumpang Gerbong " << endl;
-            cout << "------------------------" << endl;
-            cout << "Kode Penumpang: "; cin >> kodepnp;
-            adr_penumpangP P = SearchP(PNP, kodepnp);
-            if (P != NULL) {
-                cout << "Kode Gerbong: "; cin >> kodegerbong;
-                adr_gerbongP Q = SearchG(G, kodegerbong);
-                if (Q != NULL) {
-                    //connect(Q, P);
-                    info(Q).Jumlah_Penumpang++;
-                    cout << "Data Tersimpan." << endl;
-                } else {
-                    cout << "Kode gerbong tidak ditemukan." << endl;
-                }
 
-            } else {
-                cout << "Kode Penumpang tidak ditemukan." << endl;
-            }
             break;
         }
 
