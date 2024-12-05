@@ -68,7 +68,7 @@ void ShowPenumpang(ListPenumpang L, adr_gerbongP G);
 void DeleteFirstP(ListPenumpang &L, adr_penumpangP P);
 adr_penumpangP SearchP(ListPenumpang L, string ID);
 
-void connect(adr_gerbongP P, adr_penumpangP &C);
+void connect(ListGerbong G, adr_penumpangP &C);
 void disconnect(adr_penumpangP &C);
 int TotalPenumpang(ListPenumpang L);
 int TotalPendapatan(ListPenumpang L);
